@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Reservas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Reservas para Restaurantes</h1>
+    </header>
+
+    <section class="formulario-reserva">
+        <h2>Faça sua reserva</h2>
+        <form action="reservar.php" method="POST">
+            <label for="nome_cliente">Nome do Cliente:</label>
+            <input type="text" id="nome_cliente" name="nome_cliente" required>
+
+            <label for="numero_pessoas">Número de Pessoas:</label>
+            <input type="number" id="numero_pessoas" name="numero_pessoas" required>
+
+            <label for="data_reserva">Data e Hora:</label>
+            <input type="datetime-local" id="data_reserva" name="data_reserva" required>
+
+            <button type="submit">Reservar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sistema de Reservas</p>
+    </footer>
+</body>
+</html>
+
+
+
